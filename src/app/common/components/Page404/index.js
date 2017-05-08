@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 /**
  * 404 File Not Found component for non valid location path
  */
-function Page404 ({ location }) {
+function Page404({ location }) {
   return <div>
     <h3>
       No match for <code>{location.pathname}</code>
