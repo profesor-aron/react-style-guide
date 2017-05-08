@@ -42,9 +42,20 @@ module.exports = function (env) {
               'react'
             ]
           }
+        },
+        {
+          test: /\.jsx?$/,
+          enforce: "pre",
+          exclude: /node_modules/,
+          loader: 'eslint-loader',
+          options: {
+            emitError: true,
+            emitWarning: true,
+            failOnError: true,
+          }
         }
       ]
-    }	  
+    }
 	}
 
 }
