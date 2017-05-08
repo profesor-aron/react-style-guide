@@ -3,20 +3,18 @@ import { render } from 'react-dom'
 import {
   HashRouter,
   Route,
-  Link
+  Switch
 } from 'react-router-dom'
 
-import App from './App'
 import Home from './modules/Home'
-import Login from './modules/Login'
+import Page404 from './common/components/Page404'
 
 render(
 	<HashRouter>
-		<div>
-	    <Route exact path="/" component={App} />
-	    <Route path="/home" component={Home} />
-	    <Route path="/login" component={Login} />
-    </div>
+		<Switch>
+	    <Route exact path="/" component={Home}/>
+	    <Route component={Page404}/>
+    </Switch>
   </HashRouter>,
 	document.getElementById('app')
 )
