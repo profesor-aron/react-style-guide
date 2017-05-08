@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --env=dev --progress --profile --colors --hot --inline",
     "build:dev": "webpack --env=dev --progress --profile --colors",
-    "build:prod": "webpack --env=prod --progress --profile --colors"
+    "build:prod": "webpack --env=prod --progress --profile --colors",
+    "doc": "esdoc -c esdoc.json"
   },
   "repository": "npm/npm",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.23.0",
     "clean-webpack-plugin": "^0.1.16",
+    "esdoc": "^0.5.2",
     "eslint": "^3.19.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-react": "^7.0.0",

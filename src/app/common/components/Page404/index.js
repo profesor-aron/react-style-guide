@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
+/**
+ * 404 File Not Found component for non valid location path
+ */
 function Page404 ({ location }) {
   return <div>
     <h3>
@@ -11,6 +14,10 @@ function Page404 ({ location }) {
   </div>
 }
 
+/**
+ * Page404 propTypes
+ * @property {object} location path
+ */
 Page404.propTypes = {
   location: PropTypes.object
 }
