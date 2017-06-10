@@ -3,19 +3,20 @@ import DocumentTitle from 'react-document-title'
 import { Button } from 'semantic-ui-react'
 
 /**
- * Home component
+ * Login component
  */
-class Home extends Component {
+class Login extends Component {
 
   /**
    * render
-   * @return {Home} markup
+   * @return {Login} markup
    */
   render () {
     return (
-      <DocumentTitle title='Home'>
+      <DocumentTitle title='Login'>
         <div>
-          <h1>Home</h1>
+          <h1>Login</h1>
+
           <Button>
             Click Here
           </Button>
@@ -25,4 +26,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Login
