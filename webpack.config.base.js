@@ -53,6 +53,18 @@ module.exports = function (env) {
             emitWarning: true,
             failOnError: true,
           }
+        },
+        {
+          test: /\.css$/,
+          loader: "style-loader!css-loader"
+        },
+        {
+          test: /\.scss$/,
+          loaders: ["style", "css", "sass"]
+        },
+        {
+          test: /\.(png|woff|woff2|eot|ttf|svg|jpe?g|gif)$/,
+          loader: 'url-loader?limit=100000&name=[name].[ext]'
         }
       ]
     }
